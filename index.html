@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/query.css">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container container--header">
+      <a href="javascript:;" class="logo-link">
+        <img src="images/logo-bookmark.svg" class="logo-header" alt="Logo Header">
+      </a>
+      <nav class="main-nav nav--header">
+        <ul class="main-nav-list">
+          <li class="nav-links">
+            <a href="javascript:;" class="main-nav-link">Features</a>
+          </li>
+          <li class="nav-links">
+            <a href="javascript:;" class="main-nav-link">Pricing</a>
+          </li>
+          <li class="nav-links">
+            <a href="javascript:;" class="main-nav-link">Contact</a>
+          </li>
+          <li class="nav-links">
+            <a href="javascript:;" class="main-nav-link nav--login">Login</a>
+          </li>
+          <li class="nav-links icon-nav">
+            <a href="javascript:;" class="icon-nav-link">
+              <img src="images/icon-facebook.svg" alt="Icon Facebook">
+            </a>
+            <a href="javascript:;" class="icon-nav-link">
+              <img src="images/icon-twitter.svg" alt="Icon Twitter">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <img src="images/icon-hamburger.svg" class="icon-mobile-nav" name="menu" alt="Icon Hamburger">
+        <img src="images/icon-close.svg" class="icon-mobile-nav" name="close" alt="Icon Colse">
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container container--hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">A Simple Bookmark Manager</h1>
+          <p class="text-description">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <a href="javascript:;" class="btn btn--chrome">Get it on Chrome</a>
+          <a href="javascript:;" class="btn btn--firefox">Get it on Firefox</a>
+        </div>
+        <div class="hero-img-box">
+          <img src="images/illustration-hero.svg" class="hero-img" alt="Illustration Hero">
+        </div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="container container--features-description">
+        <h2 class="heading-secondary">Features</h2>
+        <p class="text-description">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <nav class="container container--features-menu">
+        <ul class="features-menu-list">
+          <li class="menu-links selected-page"><a href="javascript:;" class="features-menu-link">Simple Bookmarking</a></li>
+          <li class="menu-links"><a href="javascript:;" class="features-menu-link">Speedy Searching</a></li>
+          <li class="menu-links"><a href="javascript:;" class="features-menu-link">Easy Sharing</a></li>
+        </ul>
+      </nav>
+      <div class="container container--detail-menu">
+        <div class="detail-img-box">
+          <img src="images/illustration-features-tab-1.svg" class="features-tab-img" alt="Features Tab 1">
+        </div>
+        <div class="detail-text-box">
+          <h2 class="heading-secondary">Bookmark in one click</h2>
+          <p class="text-description">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <a href="javascript:;" class="btn btn--detail">More Info</a>
+        </div>
+      </div>
+    </section>
+    <section class="extension-section">
+      <div class="container container--extension-description">
+        <h2 class="heading-secondary">Download the extension</h2>
+        <p class="text-description">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priotize.</p>
+      </div>
+      <div class="container container--extension-list">
+        <div class="extension chrome">
+          <div class="extension-header">
+            <img src="images/logo-chrome.svg" class="extension-img" alt="Chrome">
+            <p class="extension-title">Add to Chrome</p>
+            <p class="extension-version">Minimum version 62</p>
+          </div>
+          <div class="extension-footer">
+            <a href="javascript:;" class="extension-link">Add & Install Extension</a>
+          </div>
+        </div>
+        <div class="extension firefox">
+          <div class="extension-header">
+            <img src="images/logo-firefox.svg" class="extension-img" alt="Firefox">
+            <p class="extension-title">Add to Firefox</p>
+            <p class="extension-version">Minimum version 55</p>
+          </div>
+          <div class="extension-footer">
+            <a href="javascript:;" class="extension-link">Add & Install Extension</a>
+          </div>
+        </div>
+        <div class="extension opera">
+          <div class="extension-header">
+            <img src="images/logo-opera.svg" class="extension-img" alt="Opera">
+            <p class="extension-title">Add to Opera</p>
+            <p class="extension-version">Minimum version 46</p>
+          </div>
+          <div class="extension-footer">
+            <a href="javascript:;" class="extension-link">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="container container--faq-description">
+        <h2 class="heading-secondary">Frequently Asked Questions</h2>
+        <p class="text-description">Here are some of our FAQs. If your have any other questions you'd like answered please feel free to email us.</p>
+      </div>
+      <div class="container container--faq-questions">
+        <div class="question-list">
+          <p class="question-title">What is Bookmark?</p>
+          <img src="images/icon-arrow.svg" class="question-icon" alt="Arrow">
+          <div class="question-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+        </div>
+        <div class="question-list">
+          <p class="question-title">How can I request a new browser?</p>
+          <img src="images/icon-arrow.svg" class="question-icon" alt="Arrow">
+          <div class="question-answer">
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+        </div>
+        <div class="question-list">
+          <p class="question-title">Is there a mobile app?</p>
+          <img src="images/icon-arrow.svg" class="question-icon" alt="Arrow">
+          <div class="question-answer">
+            <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+        <div class="question-list">
+          <p class="question-title">What about other Chromium browsers?</p>
+          <img src="images/icon-arrow.svg" class="question-icon" alt="Arrow">
+          <div class="question-answer">
+            <p>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+        <div class="link-info">
+          <a href="javascript:;" class="more-info">More Info</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container container--contact">
+        <p class="contact-joined">35.000+ Already Joined</p>
+        <h3 class="contact-description">Stay up-to-date with what we're doing</h3>
+        <form name="contact" class="contact-form" method="POST" action="/#header" data-netlify="true">
+          <div class="input-form">
+            <input type="text" class="contact-input" name="email" id="email" placeholder="Enter your email address">
+            <p class="error-message">Whoops, make sure it's an email</p>
+          </div>
+          <button class="contact-button">Contact Us</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container container--footer">
+      <a href="javascript:;" class="logo-footer">
+        <img src="images/logo-bookmark-white.svg" alt="">
+      </a>
+      <nav class="main-nav nav--footer">
+        <ul class="main-nav-list">
+          <li><a href="javascript:;" class="main-nav-link">Features</a></li>
+          <li><a href="javascript:;" class="main-nav-link">Pricing</a></li>
+          <li><a href="javascript:;" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo-col">
+        <ul class="social-links">
+          <li>
+            <a href="javascript:;" class="footer-link">
+              <img src="images/icon-facebook.svg" alt="Icon Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" class="footer-link">
+              <img src="images/icon-twitter.svg" alt="Icon Twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
